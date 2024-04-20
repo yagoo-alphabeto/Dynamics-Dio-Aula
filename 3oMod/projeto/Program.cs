@@ -185,43 +185,95 @@ using projeto.Models;
 
 
 
-string opcao;
+// string opcao;
 
-while(true)
+// while(true)
+// {
+//     Console.Clear();
+//     Console.WriteLine("Digite a sua Opção");
+//     Console.WriteLine("1 - Cadastrar Cliente");
+//     Console.WriteLine("2 - Buscar Cliente");
+//     Console.WriteLine("3 - Apagar Cliente");
+//     Console.WriteLine("4  Encerrar");
+    
+//     opcao = Console.ReadLine();
+
+//     switch (opcao)
+    
+//     {
+//         case "1":
+//         Console.Write("Cadastro de Cliente");
+//         break;
+
+//         case "2":
+//         Console.Write("Busca de Cliete");
+//         break;
+
+//         case "3":
+//         Console.Write("Apagare Cliente");
+//         break;
+
+//         case "4":
+//         Console.Write("Encerrar");
+//         Environment.Exit(0);
+//         break;
+
+//         default:
+//             Console.WriteLine("Opção Invalida");
+//             break;
+//     }
+// }
+
+
+
+
+
+
+
+
+// int[] arrayInt = new int[3];
+
+
+// arrayInt[0] = 72;
+// arrayInt[1] = 64;
+// arrayInt[2] = 50;
+
+
+// // Percorrendo o array com o for
+// for(int contador = 0; contador < arrayInt.Length; contador++ )
+// {
+//     Console.WriteLine($"Posição N° {contador} - {arrayInt[contador]}");
+// }
+
+
+// // Percorrendo o array com o Foreach
+// foreach(int valor in arrayInt)
+// {
+//     Console.WriteLine(valor);
+// }
+
+
+
+
+
+
+List<string> lista1 = new List<string>();
+
+lista1.Add("SP");
+lista1.Add("MG");
+lista1.Add("RJ");
+lista1.Add("ES");
+
+for(int contador = 0; contador < lista1.Count; contador++)
 {
-    Console.Clear();
-    Console.WriteLine("Digite a sua Opção");
-    Console.WriteLine("1 - Cadastrar Cliente");
-    Console.WriteLine("2 - Buscar Cliente");
-    Console.WriteLine("3 - Apagar Cliente");
-    Console.WriteLine("4  Encerrar");
-    
-    opcao = Console.ReadLine();
+    Console.WriteLine($"Posição N° {contador} - {lista1[contador]}");
+}
 
-    switch (opcao)
-    
-    {
-        case "1":
-        Console.Write("Cadastro de Cliente");
-        break;
-
-        case "2":
-        Console.Write("Busca de Cliete");
-        break;
-
-        case "3":
-        Console.Write("Apagare Cliente");
-        break;
-
-        case "4":
-        Console.Write("Encerrar");
-        Environment.Exit(0);
-        break;
-
-        default:
-            Console.WriteLine("Opção Invalida");
-            break;
-    }
+int contadorforeach = 0;
+foreach(string item in lista1)
+{
+    Console.WriteLine($"Posição N° {contadorforeach} - {item}");
+    contadorforeach++;
 }
 
 
