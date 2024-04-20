@@ -257,24 +257,24 @@ using projeto.Models;
 
 
 
-List<string> lista1 = new List<string>();
+// List<string> lista1 = new List<string>();
 
-lista1.Add("SP");
-lista1.Add("MG");
-lista1.Add("RJ");
-lista1.Add("ES");
+// lista1.Add("SP");
+// lista1.Add("MG");
+// lista1.Add("RJ");
+// lista1.Add("ES");
 
-for(int contador = 0; contador < lista1.Count; contador++)
-{
-    Console.WriteLine($"Posição N° {contador} - {lista1[contador]}");
-}
+// for(int contador = 0; contador < lista1.Count; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} - {lista1[contador]}");
+// }
 
-int contadorforeach = 0;
-foreach(string item in lista1)
-{
-    Console.WriteLine($"Posição N° {contadorforeach} - {item}");
-    contadorforeach++;
-}
+// int contadorforeach = 0;
+// foreach(string item in lista1)
+// {
+//     Console.WriteLine($"Posição N° {contadorforeach} - {item}");
+//     contadorforeach++;
+// }
 
 
 
