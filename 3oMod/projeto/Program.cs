@@ -1,5 +1,6 @@
 ﻿using projeto.Models;
-
+using projeto.Models;
+using projeto.Models;
 
 // Pessoa p = new Pessoa();
 
@@ -115,25 +116,113 @@
 // }
 
 
-bool possuiPresensaMinima = true;
-double media = 7.5;
+// bool possuiPresensaMinima = true;
+// double media = 7.5;
 
-if (possuiPresensaMinima && media >= 7)
+// if (possuiPresensaMinima && media >= 7)
+// {
+//     Console.WriteLine("Aprovado");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado")
+// }
+
+
+
+
+
+// Calculadora calc = new Calculadora();
+
+// calc.RaizQuadrada(9);
+
+
+
+
+
+
+// Trigonometria trig = new Trigonometria();
+
+// trig.Seno(30);
+// trig.Coseno(30);
+// trig.Tangente(30);
+
+
+
+// int n = 5;
+
+// for(int contador = 0; contador <= 10; contador++)
+// {
+//     Console.WriteLine($"{n} x {contador} = {n * contador}");
+// }
+
+
+// int n = 5;
+// int contador = 0;
+
+// while (contador <= 10)
+// {
+//     Console.WriteLine($"{n} x {contador} = {n * contador}");
+//     contador++;
+// }
+
+
+
+
+
+
+// int soma = 0 , numero = 0;
+
+// do
+// {
+//     Console.WriteLine("Digite um Número(0 para parar)");
+//     numero = Convert.ToInt32(Console.ReadLine());
+//     soma += numero;
+// }
+// while(numero != 0);
+
+// Console.WriteLine($"Total da soma dos numeros é: {soma}");
+
+
+
+string opcao;
+
+while(true)
 {
-    Console.WriteLine("Aprovado");
+    Console.Clear();
+    Console.WriteLine("Digite a sua Opção");
+    Console.WriteLine("1 - Cadastrar Cliente");
+    Console.WriteLine("2 - Buscar Cliente");
+    Console.WriteLine("3 - Apagar Cliente");
+    Console.WriteLine("4  Encerrar");
+    
+    opcao = Console.ReadLine();
+
+    switch (opcao)
+    
+    {
+        case "1":
+        Console.Write("Cadastro de Cliente");
+        break;
+
+        case "2":
+        Console.Write("Busca de Cliete");
+        break;
+
+        case "3":
+        Console.Write("Apagare Cliente");
+        break;
+
+        case "4":
+        Console.Write("Encerrar");
+        Environment.Exit(0);
+        break;
+
+        default:
+            Console.WriteLine("Opção Invalida");
+            break;
+    }
 }
-else
-{
-    Console.WriteLine("Reprovado")
-}
-
-
-
-
-
-
-
-
 
 
 
